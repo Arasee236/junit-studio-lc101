@@ -1,6 +1,13 @@
 package main;
 
 public class BonusBinarySearch {
+//    public static void main(String[] args)
+//    {
+//        int intArray[] = {3,5,7,9,17};
+//        int result = binarySearch(intArray,5);
+//        System.out.println(result);
+//
+//    }
 
     /**
      * A binary search implementation for integer arrays.
@@ -19,7 +26,7 @@ public class BonusBinarySearch {
             if (sortedNumbers[mid] > n) {
                 right = mid;
             } else if (sortedNumbers[mid] < n) {
-                left = mid;
+                left = mid+1;
             } else {
                 return mid;
             }
@@ -28,3 +35,5 @@ public class BonusBinarySearch {
     }
 
 }
+
+
